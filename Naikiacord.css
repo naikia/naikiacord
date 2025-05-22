@@ -1,0 +1,569 @@
+/**
+ * @name Naikiacord
+ * @description My fav green color. Theme based off System24 by refact0r
+ * @author Naikia 
+ * @version 1.0.0
+ * @invite kMRpmMCXFw
+ * @website https://naikia.me
+ * @source https://github.com/refact0r/system24/blob/master/theme/system24.theme.css
+*/
+
+@import url('https://refact0r.github.io/system24/build/system24.css');
+
+body {
+    --font: 'DM Mono';
+    --code-font: 'DM Mono';
+    font-weight: 300;
+    letter-spacing: -0.05ch;
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 2px;
+    --border-hover-transition: 0.2s ease;
+    --animations: on;
+    --list-item-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --dms-icon-svg-transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+    --custom-dms-icon: off;
+    --dms-icon-svg-url: url('');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: color;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--green-2), var(--green-3), var(--green-1));
+    --background-image: off;
+    --background-image-url: url('');
+    --transparency-tweaks: on;
+    --remove-bg-layer: on;
+    --panel-blur: off;
+    --blur-amount: 0px;
+    --bg-floating: rgba(0, 100, 50, 0.4);
+    --small-user-panel: on;
+    --unrounding: on;
+    --custom-spotify-bar: on;
+    --ascii-titles: on;
+    --ascii-loader: system24;
+    --panel-labels: on;
+    --label-color: var(--green-1);
+    --label-font-weight: 500;
+}
+
+:root {
+    --colors: on;
+    --text-0: rgba(255, 255, 255, 0.9);
+    --text-1: rgba(255, 255, 255, 0.9);
+    --text-2: rgba(255, 255, 255, 0.85);
+    --text-3: rgba(255, 255, 255, 0.8);
+    --text-4: rgba(255, 255, 255, 0.7);
+    --text-5: rgba(255, 255, 255, 0.5);
+    
+    /* Green transparent backgrounds */
+    --bg-1: rgba(0, 120, 60, 0.5);
+    --bg-2: rgba(0, 100, 50, 0.5);
+    --bg-3: rgba(0, 80, 40, 0.5);
+    --bg-4: rgba(0, 60, 30, 0.5);
+    
+    --hover: rgba(0, 150, 75, 0.3);
+    --active: rgba(0, 180, 90, 0.4);
+    --active-2: rgba(0, 200, 100, 0.5);
+    --message-hover: rgba(0, 150, 75, 0.3);
+    
+    --accent-1: rgba(100, 255, 150, 0.9);
+    --accent-2: rgba(80, 255, 130, 0.9);
+    --accent-3: rgba(60, 220, 110, 0.9);
+    --accent-4: rgba(40, 200, 90, 0.9);
+    --accent-5: rgba(20, 180, 70, 0.9);
+    
+    --accent-new: rgba(255, 100, 100, 0.8);
+    --mention: linear-gradient(to right, rgba(0, 255, 100, 0.2) 40%, transparent);
+    --mention-hover: linear-gradient(to right, rgba(0, 255, 100, 0.3) 40%, transparent);
+    --reply: linear-gradient(to right, rgba(255, 255, 255, 0.1) 40%, transparent);
+    --reply-hover: linear-gradient(to right, rgba(255, 255, 255, 0.15) 40%, transparent);
+    
+    --online: rgba(0, 255, 100, 0.8);
+    --dnd: rgba(255, 100, 100, 0.8);
+    --idle: rgba(255, 200, 0, 0.8);
+    --streaming: rgba(180, 100, 255, 0.8);
+    --offline: rgba(150, 150, 150, 0.8);
+    
+    --border-light: rgba(0, 255, 100, 0.2);
+    --border: rgba(0, 255, 100, 0.3);
+    --border-hover: rgba(0, 255, 100, 0.5);
+    --button-border: rgba(0, 255, 100, 0.3);
+    
+    --green-1: rgba(100, 255, 150, 0.9);
+    --green-2: rgba(80, 255, 130, 0.9);
+    --green-3: rgba(60, 220, 110, 0.9);
+    --green-4: rgba(40, 200, 90, 0.9);
+    --green-5: rgba(20, 180, 70, 0.9);
+    
+    --red-1: rgba(255, 100, 100, 0.9);
+    --red-2: rgba(255, 80, 80, 0.9);
+    --red-3: rgba(255, 60, 60, 0.9);
+    --red-4: rgba(255, 40, 40, 0.9);
+    --red-5: rgba(255, 20, 20, 0.9);
+    
+    --blue-1: rgba(100, 150, 255, 0.9);
+    --blue-2: rgba(80, 130, 255, 0.9);
+    --blue-3: rgba(60, 110, 255, 0.9);
+    --blue-4: rgba(40, 90, 255, 0.9);
+    --blue-5: rgba(20, 70, 255, 0.9);
+    
+    --yellow-1: rgba(255, 255, 100, 0.9);
+    --yellow-2: rgba(255, 255, 80, 0.9);
+    --yellow-3: rgba(255, 255, 60, 0.9);
+    --yellow-4: rgba(255, 255, 40, 0.9);
+    --yellow-5: rgba(255, 255, 20, 0.9);
+    
+    --purple-1: rgba(200, 100, 255, 0.9);
+    --purple-2: rgba(180, 80, 255, 0.9);
+    --purple-3: rgba(160, 60, 255, 0.9);
+    --purple-4: rgba(140, 40, 255, 0.9);
+    --purple-5: rgba(120, 20, 255, 0.9);
+}
+
+/* Make Discord window transparent */
+#app-mount {
+    background-color: transparent !important;
+}
+
+/* Make all app backgrounds transparent */
+.app-2CXKsg {
+    background: transparent !important;
+}
+
+.bg-1QIAus, .base-2jDfDU, .container-1eFtFS, .chat-2ZfjoI, .container-2o3qEW, .container-1NXEtd, .panels-3wFtMD, .sidebar-1tnWFu, .scroller-3X7KbA, .scroller-RfJjkV, .scroller-1ox3I2, .scroller-1JpcIc {
+    background-color: transparent !important;
+}
+
+/* Override Discord's default background colors */
+.theme-dark {
+    --background-primary: rgba(0, 80, 40, 0.5) !important;
+    --background-secondary: rgba(0, 60, 30, 0.5) !important;
+    --background-secondary-alt: rgba(0, 70, 35, 0.5) !important;
+    --background-tertiary: rgba(0, 50, 25, 0.5) !important;
+    --background-accent: rgba(0, 100, 50, 0.5) !important;
+    --background-floating: rgba(0, 40, 20, 0.7) !important;
+    --background-mobile-primary: rgba(0, 80, 40, 0.5) !important;
+    --background-mobile-secondary: rgba(0, 60, 30, 0.5) !important;
+    --channeltextarea-background: rgba(0, 90, 45, 0.5) !important;
+    --background-modifier-hover: rgba(0, 150, 75, 0.3) !important;
+    --background-modifier-active: rgba(0, 180, 90, 0.4) !important;
+    --background-modifier-selected: rgba(0, 200, 100, 0.5) !important;
+    --background-modifier-accent: rgba(0, 255, 100, 0.2) !important;
+    --elevation-low: 0 1px 5px rgba(0, 80, 40, 0.3) !important;
+    --elevation-high: 0 2px 10px rgba(0, 80, 40, 0.4) !important;
+}
+
+/* Make sure all layers are transparent */
+.layer-86YKbF {
+    background-color: transparent !important;
+}
+
+/* Make modals and popouts green and transparent */
+.root-g14mjS, .modal-2RrUKJ, .modalRoot-1Kx4Hb, .modalSize-cqUaws, .uploadModal-2ie9O_, .contentWrapper-3vHNP2, .messagesPopoutWrap-3zryHW, .container-2ebMPP, .container-2McqkF, .popout-TdhJ6Z, .container-2O1UgZ, .container-3u7RcY, .menu-1QACrS, .colorDefault-CDqZdO {
+    background-color: rgba(0, 60, 30, 0.7) !important;
+    box-shadow: 0 0 10px rgba(0, 255, 100, 0.2) !important;
+    border: 1px solid rgba(0, 255, 100, 0.3) !important;
+}
+
+/* Make sure scrollbars match the theme */
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 255, 100, 0.5) !important;
+    border-radius: 0 !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 80, 40, 0.3) !important;
+    border-radius: 0 !important;
+}
+
+/* Make sure inputs are green and semi-transparent */
+.input-2g-os5, .input-2z42oC, .inputDefault-3FGxgL, .inputWrapper-1YNMmM {
+    background-color: rgba(0, 40, 20, 0.5) !important;
+    border: 1px solid rgba(0, 255, 100, 0.3) !important;
+}
+
+/* Make sure buttons are green and semi-transparent */
+.lookFilled-1H2Jvj, .lookOutlined-3RTC7c, .lookLink-13iF2K {
+    background-color: rgba(0, 100, 50, 0.6) !important;
+    border-color: rgba(0, 255, 100, 0.4) !important;
+}
+
+.lookFilled-1H2Jvj:hover, .lookOutlined-3RTC7c:hover {
+    background-color: rgba(0, 120, 60, 0.7) !important;
+}
+
+/* Make sure message area is green and transparent */
+.channelTextArea-1FufC0, .scrollableContainer-15eg7h {
+    background-color: rgba(0, 70, 35, 0.5) !important;
+    border: 1px solid rgba(0, 255, 100, 0.2) !important;
+}
+
+/* Make sure messages are slightly visible */
+.message-2CShn3 {
+    background-color: rgba(0, 60, 30, 0.2) !important;
+    transition: background-color 0.2s ease;
+}
+
+.message-2CShn3:hover {
+    background-color: rgba(0, 80, 40, 0.3) !important;
+}
+
+/* Custom Discord icon - UPDATED to use the provided URL */
+.privateChannels-oVe7HL .searchBar-3TnChZ {
+    position: relative;
+}
+
+.privateChannels-oVe7HL .searchBar-3TnChZ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://cdn.discordapp.com/avatars/1364720573682290811/276d84812917fbf4088577b3ffe788fb.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 1;
+    transform: scale(0.8);
+    margin: 8px;
+}
+
+/* Replace home icon - UPDATED to use the provided URL */
+.guilds-2JjMmN .homeIcon-r0w4ny {
+    background-image: url('https://cdn.discordapp.com/avatars/1364720573682290811/276d84812917fbf4088577b3ffe788fb.png') !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.guilds-2JjMmN .homeIcon-r0w4ny path {
+    display: none !important;
+}
+
+.homeIcon-r0w4ny {
+    background-color: transparent !important;
+    mask: none !important;
+    -webkit-mask: none !important;
+}
+
+/* Blur private info */
+.accountProfileCard-lbN7n- .field-21XZwa:nth-child(2) .text-xs-normal-3O7EaX,
+.accountProfileCard-lbN7n- .field-21XZwa:nth-child(2) .text-sm-normal-3Zj3Iv {
+    filter: blur(5px);
+    transition: filter 0.2s ease;
+}
+
+.accountProfileCard-lbN7n- .field-21XZwa:nth-child(2):hover .text-xs-normal-3O7EaX,
+.accountProfileCard-lbN7n- .field-21XZwa:nth-child(2):hover .text-sm-normal-3Zj3Iv {
+    filter: blur(0);
+}
+
+.accountProfileCard-lbN7n- .field-21XZwa:nth-child(3) .text-xs-normal-3O7EaX,
+.accountProfileCard-lbN7n- .field-21XZwa:nth-child(3) .text-sm-normal-3Zj3Iv {
+    filter: blur(5px);
+    transition: filter 0.2s ease;
+}
+
+.accountProfileCard-lbN7n- .field-21XZwa:nth-child(3):hover .text-xs-normal-3O7EaX,
+.accountProfileCard-lbN7n- .field-21XZwa:nth-child(3):hover .text-sm-normal-3Zj3Iv {
+    filter: blur(0);
+}
+
+/* Add glow effects */
+.container-2cd8Mz {
+    box-shadow: 0 0 15px rgba(0, 255, 100, 0.2);
+}
+
+.wrapper-1VLyxH:hover {
+    filter: drop-shadow(0 0 3px rgba(0, 255, 100, 0.7));
+    transition: filter 0.3s ease;
+}
+
+/* Server list animations */
+.listItem-3SmSlK {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.listItem-3SmSlK:hover {
+    transform: translateY(-2px);
+}
+
+/* Branding */
+.panels-3wFtMD::after {
+    content: "Naikiacord by Naikia.me";
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    color: rgba(100, 255, 150, 0.9);
+    opacity: 0.7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Make sure borders are removed or transparent */
+.container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-2ZfjoI, .title-31SJ6t, .container-ZMc96U, .searchBar-jGtisZ {
+    border: none !important;
+}
+
+/* Make sure Discord is fully transparent */
+#app-mount::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: transparent;
+}
+
+/* Fix for Windows title bar */
+.typeWindows-2-g3UY {
+    background: rgba(0, 60, 30, 0.7) !important;
+    margin-top: 0;
+    padding-top: 4px;
+}
+
+/* Fix for server list */
+.guilds-2JjMmN {
+    background-color: rgba(0, 50, 25, 0.5) !important;
+}
+
+/* Fix for channel list */
+.sidebar-1tnWFu {
+    background-color: rgba(0, 60, 30, 0.5) !important;
+}
+
+/* Fix for chat area */
+.chat-2ZfjoI {
+    background-color: rgba(0, 70, 35, 0.5) !important;
+}
+
+/* Fix for member list */
+.members-3WRCEx, .container-2o3qEW {
+    background-color: rgba(0, 50, 25, 0.5) !important;
+}
+
+/* Fix for user area */
+.panels-3wFtMD {
+    background-color: rgba(0, 60, 30, 0.5) !important;
+}
+
+/* Make sure code blocks are readable */
+.markup-eYLPri code {
+    background-color: rgba(0, 40, 20, 0.7) !important;
+}
+
+/* Make sure embeds are visible */
+.embedFull-1HGV2S {
+    background-color: rgba(0, 50, 25, 0.7) !important;
+    border-left: 4px solid rgba(0, 255, 100, 0.5) !important;
+}
+
+/* FIX RESIZING ISSUES */
+
+/* Ensure proper layout on window resize */
+.base-2jDfDU {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    overflow: hidden !important;
+}
+
+/* Fix content resizing */
+.content-1SgpWY {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    height: calc(100vh - var(--top-bar-height)) !important;
+    max-height: calc(100vh - var(--top-bar-height)) !important;
+    min-height: 0 !important;
+}
+
+/* Fix sidebar resizing */
+.sidebar-1tnWFu {
+    flex: 0 0 auto !important;
+    width: 240px !important;
+    min-width: 0 !important;
+    max-width: 240px !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Fix chat area resizing */
+.chat-2ZfjoI {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Fix member list resizing */
+.container-2o3qEW {
+    flex: 0 0 auto !important;
+    width: 240px !important;
+    min-width: 0 !important;
+    max-width: 240px !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Fix server list resizing */
+.guilds-2JjMmN {
+    flex: 0 0 auto !important;
+    width: 72px !important;
+    min-width: 0 !important;
+    max-width: 72px !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Fix scrolling containers */
+.scroller-3X7KbA, .scroller-RfJjkV, .scroller-1ox3I2, .scroller-1JpcIc {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* Fix message list resizing */
+.messagesWrapper-RpOMA3 {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Fix message list scrolling */
+.scroller-kQBbkU {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    min-height: 0 !important;
+}
+
+/* Fix channel text area resizing */
+.form-3gdLxP {
+    flex: 0 0 auto !important;
+    padding: 0 16px !important;
+    margin-bottom: 24px !important;
+}
+
+/* Fix for small screens */
+@media (max-width: 950px) {
+    .container-2o3qEW {
+        width: 240px !important;
+        min-width: 240px !important;
+        max-width: 240px !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .container-2o3qEW {
+        display: none !important;
+    }
+}
+
+/* Fix for very small screens */
+@media (max-width: 600px) {
+    .sidebar-1tnWFu {
+        width: 72px !important;
+        min-width: 72px !important;
+        max-width: 72px !important;
+    }
+    
+    .sidebar-1tnWFu .name-28HaxV, 
+    .sidebar-1tnWFu .children-1MGS9G, 
+    .sidebar-1tnWFu .headerText-1qIDDT {
+        display: none !important;
+    }
+}
+
+/* Fix for Discord logo in server list */
+.listItemWrapper-3d87LP {
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.homeIcon-r0w4ny {
+    width: 28px !important;
+    height: 28px !important;
+    background-size: contain !important;
+    border-radius: 50% !important;
+}
+
+/* Fix for Discord logo in DMs */
+.privateChannels-oVe7HL .searchBar-3TnChZ::before {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50% !important;
+}
+
+/* Fix for user area */
+.container-YkUktl {
+    height: auto !important;
+    min-height: 52px !important;
+    max-height: none !important;
+    padding: 8px !important;
+}
+
+/* Fix for panels */
+.panels-3wFtMD {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+}
+
+/* Fix for modals */
+.modal-2RrUKJ {
+    max-width: 90vw !important;
+    max-height: 90vh !important;
+    overflow: auto !important;
+}
+
+/* Fix for popouts */
+.popout-TdhJ6Z {
+    max-width: 90vw !important;
+    max-height: 90vh !important;
+    overflow: auto !important;
+}
+
+/* Fix for context menus */
+.menu-1QACrS {
+    max-width: 90vw !important;
+    max-height: 90vh !important;
+    overflow: auto !important;
+}
+
+/* Fix for user popouts */
+.userPopout-2j1gM4 {
+    max-width: 90vw !important;
+    max-height: 90vh !important;
+    overflow: auto !important;
+}
+
+/* Fix for tooltips */
+.tooltip-14MtrL {
+    max-width: 90vw !important;
+}
